@@ -23,6 +23,6 @@ public class TodoController : ControllerBase
     public async Task <IActionResult> Get()
     {
         var todos = await _todoService.GetAllTodos();
-        return Ok("ok");
+        return Ok(todos);
     }
 }
